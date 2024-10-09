@@ -4,7 +4,7 @@ Mindful demure and cutesy code
 
 # Simple Library Management System
 
-Welcome to the **Simple Library Management System** project! This is a basic Java application designed to help manage a small library by adding, removing, and listing books. The project demonstrates fundamental concepts of Object-Oriented Programming (OOP), such as classes, objects, and inheritance.
+Welcome to the **Simple Library Management System** project! This is a basic C++ application designed to help manage a small library by adding, removing, and listing books. The project demonstrates fundamental concepts of Object-Oriented Programming (OOP), such as classes, objects, and inheritance.
 
 ## Table of Contents
 
@@ -18,7 +18,7 @@ Welcome to the **Simple Library Management System** project! This is a basic Jav
 
 ## Project Overview
 
-This project implements a basic library management system using Java. The system allows you to manage a collection of books, with each book having attributes like a title, author, and ISBN number. The library can hold multiple books, and you can:
+This project implements a basic library management system using C++. The system allows you to manage a collection of books, with each book having attributes like a title, author, and ISBN number. The library can hold multiple books, and you can:
 - Add new books to the library.
 - Remove books by their ISBN.
 - List all the books currently in the library.
