@@ -11,12 +11,10 @@ protected:
 public:
     Publicatie(const std::string& titlu) : titlu(titlu) {}
 
-    virtual std::string getTitlu() const 
+    std::string getTitlu() const 
     {
         return titlu;
     }
-
-    virtual std::string getInfo() const = 0;
 };
 
 class Carte : public Publicatie 
@@ -39,7 +37,7 @@ public:
         return ISBN;
     }
 
-    std::string getInfo() const override 
+    std::string getInfo() const
     {
         return "Carte: " + titlu + ", Autor: " + autor + ", ISBN: " + ISBN;
     }
@@ -67,7 +65,8 @@ public:
         {
             std::cout << "Cartea cu ISBN " << ISBN << " a fost eliminata." << std::endl;
             carti.erase(it, carti.end());
-        } else 
+        } 
+        else 
         {
             std::cout << "Cartea cu ISBN " << ISBN << " nu a fost găsita." << std::endl;
         }
@@ -78,7 +77,8 @@ public:
         if (carti.empty()) 
         {
             std::cout << "Biblioteca este goala." << std::endl;
-        } else 
+        } 
+        else 
         {
             std::cout << "Cărti în biblioteca:" << std::endl;
             for (const auto& carte : carti) 
@@ -136,7 +136,7 @@ int main()
             biblioteca.Afiseaza_Carti();
             break;
         case 0:
-            std::cout << "Iesire din progrsam.\n";
+            std::cout << "Iesire din program.\n";
             break;
         default:
             std::cout << "Optiune invalida! Alege din nou.\n";
